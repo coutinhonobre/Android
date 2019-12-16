@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="fundoTela">#FFFFFF</color>
+    <color name="fundoTelaCards">#F1F1F1</color>
+    <color name="fundoCards">#FFFFFF</color>
+    <color name="colorPrimary">#186096</color>
+    <color name="colorPrimaryDark">#00386C</color>
+    <color name="colorAccent">#64863B</color>
+
+    <!-- Colors splash screen -->
+    <color name="splash_gradient_start">#186096</color>
+    <color name="splash_gradient_end">#053F6A</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="white">#FFFFFF</color>
+
+    <!-- dados do cliente -->
+    <color name="btnStatus">#638735</color>
+    <color name="txtLabels">#95989A</color>
+
+
+    <!-- Status dos pedidos -->
+    <color name="status_pedido_fv">#95989A</color>
+    <color name="status_pedido__recusado_erp">#FF9900</color>
+    <color name="status_pedido_pendente">#606060</color>
+    <color name="status_pedido_bloqueado">#3557AA</color>
+    <color name="status_pedido_liberado">#186096</color>
+    <color name="status_pedido_montado">#7FAA33</color>
+    <color name="status_pedido_faturado">#64863B</color>
+    <color name="status_pedido_cancelado">#E40613</color>
+    <color name="status_pedido_orcamento">#2D3E4E</color>
+
+    <!-- legendas -->
+    <color name="legendas_corte">#FF9900</color>
+    <color name="legendas_falta">#BF595F</color>
+    <color name="legendas_cancelado_erp">#E40613</color>
+    <color name="legendas_devolucao">#186096</color>
+    <color name="legendas_feito_telemarketing">#64863B</color>
+
+</resources>

@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status do pedido no ERP" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow android:layout_marginTop="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:foregroundGravity="center_vertical"
+                    app:cardBackgroundColor="@color/status_pedido_fv"
+                    app:cardCornerRadius="18dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_maxima_em_processamento"
+                        android:gravity="center"
+                        android:textSize="18sp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Status do pedido no ERP" />
+
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:foregroundGravity="center_vertical"
+                    app:cardBackgroundColor="@color/status_pedido__recusado_erp"
+                    app:cardCornerRadius="18dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:text="!"
+                        android:textColor="@color/white"
+                        android:gravity="center|center_horizontal"
+                        android:textSize="18sp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Pedido recusado pelo ERP" />
+
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:foregroundGravity="center_vertical"
+                    app:cardBackgroundColor="@color/status_pedido_pendente"
+                    app:cardCornerRadius="18dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:text="P"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:textSize="18sp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Posição no ERP Pendente" />
+
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:foregroundGravity="center_vertical"
+                    app:cardBackgroundColor="@color/status_pedido_bloqueado"
+                    app:cardCornerRadius="18dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:text="B"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:textSize="18sp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Posição no ERP Bloqueado" />
+
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:foregroundGravity="center_vertical"
+                    app:cardBackgroundColor="@color/status_pedido_liberado"
+                    app:cardCornerRadius="18dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:text="L"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:textSize="18sp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Posição no ERP Liberado" />
+
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:foregroundGravity="center_vertical"
+                    app:cardBackgroundColor="@color/status_pedido_montado"
+                    app:cardCornerRadius="18dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:text="M"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:textSize="18sp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Posição no ERP Montado" />
+
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:foregroundGravity="center_vertical"
+                    app:cardBackgroundColor="@color/status_pedido_faturado"
+                    app:cardCornerRadius="18dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:text="F"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:textSize="18sp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Posição no ERP Faturado" />
+
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:foregroundGravity="center_vertical"
+                    app:cardBackgroundColor="@color/status_pedido_cancelado"
+                    app:cardCornerRadius="18dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:text="C"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:textSize="18sp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Posição no ERP Cancelado" />
+
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:foregroundGravity="center_vertical"
+                    app:cardBackgroundColor="@color/status_pedido_orcamento"
+                    app:cardCornerRadius="18dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:text="O"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:textSize="18sp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Orçamento" />
+
+            </TableRow>
+
+
+
+
+        </TableLayout>
+
+        <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crítica" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_maxima_aguardando_critica"
+            android:textAlignment="gravity"
+            android:gravity="center_vertical"
+            android:text="Aguardando retorno do ERP" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_maxima_critica_sucesso"
+            android:textAlignment="gravity"
+            android:gravity="center_vertical"
+            android:text="Sucesso" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_maxima_critica_alerta"
+            android:textAlignment="gravity"
+            android:gravity="center_vertical"
+            android:text="Falha parcial" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_error_black_24dp"
+            android:textAlignment="gravity"
+            android:gravity="center_vertical"
+            android:text="Falha total" />
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Legendas" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_maxima_legenda_corte"
+            android:textAlignment="gravity"
+            android:gravity="center_vertical"
+            android:text="Pedido sofreu corte" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_maxima_legenda_falta"
+            android:textAlignment="gravity"
+            android:gravity="center_vertical"
+            android:text="Pedido com falta" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_maxima_legenda_cancelamento"
+            android:textAlignment="gravity"
+            android:gravity="center_vertical"
+            android:text="Pedido cancelado no ERP" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_maxima_legenda_devolucao"
+            android:textAlignment="gravity"
+            android:gravity="center_vertical"
+            android:text="Pedido com devolução" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_maxima_legenda_telemarketing"
+            android:textAlignment="gravity"
+            android:gravity="center_vertical"
+            android:text="Pedido feito pelo Telemarketing" />
+
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
+

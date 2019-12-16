@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/fundoCards"
+    app:cardCornerRadius="5dp"
+    android:layout_marginTop="10dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+
+        <TextView
+            android:id="@+id/dadosClienteDadosCliente"
+            style="@style/CardTitleTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dados_do_cliente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/dadosClienteRazaoSocial"
+            style="@style/CardTitleSubTituloNegrito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dadosClienteDadosCliente"
+            tools:text="40.795 - A E D REMEDIOS E PERFUMARIA - EIRELI - M" />
+
+        <TextView
+            android:id="@+id/dadosClienteNomeFantasia"
+            style="@style/CardTitleFieldsTitulo"
+            android:textColor="@color/txtLabels"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dadosClienteRazaoSocial"
+            tools:text="DROGARIA CAMPESTRE" />
+
+        <TextView
+            android:id="@+id/dadosClienteCpf_descricao"
+            style="@style/CardTitleFields"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dadosClienteNomeFantasia"
+            android:text="@string/cpf" />
+
+        <TextView
+            android:id="@+id/dadosClienteCpf"
+            style="@style/CardTitleFields"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/dadosClienteCpf_descricao"
+            app:layout_constraintTop_toBottomOf="@+id/dadosClienteNomeFantasia"
+            tools:text="039.039.039-61" />
+
+        <TextView
+            android:id="@+id/dadosClienteCnpj_descricao"
+            style="@style/CardTitleFields"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dadosClienteCpf_descricao"
+            android:text="@string/cnpj" />
+
+        <TextView
+            android:id="@+id/dadosClienteCnpj"
+            style="@style/CardTitleFields"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/dadosClienteCnpj_descricao"
+            app:layout_constraintTop_toBottomOf="@+id/dadosClienteCpf"
+            tools:text="10.766.206/0002-61" />
+
+        <TextView
+            android:id="@+id/dadosClienteRamoAtividade_descricao"
+            style="@style/CardTitleFields"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dadosClienteCnpj"
+            android:text="@string/ramo_de_atividade" />
+
+        <TextView
+            android:id="@+id/dadosClienteRamoAtividade"
+            style="@style/CardTitleFields"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/dadosClienteRamoAtividade_descricao"
+            app:layout_constraintTop_toBottomOf="@+id/dadosClienteCnpj"
+            tools:text="Panificadora" />
+
+        <TextView
+            android:id="@+id/dadosClienteEndereco_descricao"
+            style="@style/CardTitleFields"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dadosClienteRamoAtividade_descricao"
+            android:text="@string/enderecos" />
+
+        <TextView
+            android:id="@+id/dadosClienteEndereco"
+            style="@style/CardTitleFields"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/dadosClienteEndereco_descricao"
+            app:layout_constraintTop_toBottomOf="@+id/dadosClienteRamoAtividade"
+            tools:text="Panificadora" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/txtContatosItemNome"
+        style="@style/CardTitleSubTituloNegrito"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Leandro Pereira de Rossi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtContatosItemNome">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/txtContatosItemTelefoneField"
+                style="@style/CardTitleFieldsList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/telefone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtContatosItemNome" />
+
+            <TextView
+                android:id="@+id/txtContatosItemTelefone"
+                style="@style/CardTitleFieldsList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:drawableEnd="@drawable/ic_maxima_telefone"
+                android:gravity="center_vertical"
+                tools:text="3988-3889"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/txtContatosItemTelefoneField"
+                app:layout_constraintTop_toBottomOf="@+id/txtContatosItemNome" />
+
+            <TextView
+                android:id="@+id/txtContatosItemEmailField"
+                style="@style/CardTitleFieldsList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/e_mail"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/txtContatosItemEmail"
+                style="@style/CardTitleFieldsList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:drawableEnd="@drawable/ic_maxima_email"
+                android:gravity="center_vertical"
+                tools:text="leandro.rossi@gmail.com"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/txtContatosItemCelularField"
+                style="@style/CardTitleFieldsList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/celular" />
+
+            <TextView
+                android:id="@+id/txtContatosItemCelular"
+                style="@style/CardTitleFieldsList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:drawableEnd="@drawable/ic_maxima_telefone"
+                android:gravity="center_vertical"
+                tools:text="(62) 9 8888-9888"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtContatosItemDataNascimentoField"
+                style="@style/CardTitleFieldsList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/data_nasc"/>
+
+            <TextView
+                android:id="@+id/txtContatosItemDataNascimento"
+                style="@style/CardTitleFieldsList"
+                android:layout_marginStart="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="17/12/1990"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/txtContatosItemConjugeField"
+                style="@style/CardTitleFieldsList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/conjunge" />
+
+            <TextView
+                android:id="@+id/txtContatosItemConjuge"
+                style="@style/CardTitleFieldsList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:maxEms="8"
+                android:maxLines="1"
+                tools:text="LEANDRO PEREIRA DE RO..."
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtContatosItemDataNascConjugeField"
+                style="@style/CardTitleFieldsList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nasc_c_njuge" />
+
+            <TextView
+                android:id="@+id/txtContatosItemDataNascConjuge"
+                style="@style/CardTitleFieldsList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                tools:text="17/12/1990"
+                android:textStyle="bold" />
+
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/txtContatosItemcTipoField"
+                style="@style/CardTitleFieldsList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tipo" />
+
+            <TextView
+                android:id="@+id/txtContatosItemTipo"
+                style="@style/CardTitleFieldsList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                tools:text="Sócio"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtContatosItemTimeField"
+                style="@style/CardTitleFieldsList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/time" />
+
+            <TextView
+                android:id="@+id/txtContatosItemTime"
+                style="@style/CardTitleFieldsList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                tools:text="Flamengo"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/txtContatosItemcHobbieField"
+                style="@style/CardTitleFieldsList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hobbie" />
+
+            <TextView
+                android:id="@+id/txtContatosItemHobbie"
+                style="@style/CardTitleFieldsList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                tools:text="Não informado"
+                android:textStyle="bold"/>
+        </TableRow>
+
+
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

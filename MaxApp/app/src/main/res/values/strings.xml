@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Max App</string>
+
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="maxima_logotipo">Maxima logotipo</string>
+    <string name="clientes">Clientes</string>
+    <string name="pedidos">Pedidos</string>
+    <string name="resumo_de_vendas">Resumo de vendas</string>
+    <string name="versao">V.1.0.0  </string>
+    <string name="title_activity_clientes">ClientesActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="cpf">CPF:</string>
+    <string name="dados_do_cliente">Dados do cliente</string>
+    <string name="cnpj">CNPJ:</string>
+    <string name="ramo_de_atividade">Ramo de atividade:</string>
+    <string name="enderecos">Endereços:</string>
+    <string name="hist_pedidos">Hist. Pedidos</string>
+    <string name="alvaras">Alvaras</string>
+    <string name="contatos">Contatos</string>
+    <string name="verificar_status_do_cliente">verificar status do cliente</string>
+    <string name="fechar">Fechar</string>
+    <string name="maxima_empty_state">Maxima empty state</string>
+    <string name="nada_encontrado">Nada encontrado...</string>
+    <string name="n_o_h_alvar_s_para_exibir_verifique_com_o_respons_vel_pelo_erp">Não há alvarás para exibir, verifique com o responsável pelo ERP</string>
+    <string name="Buscar">Buscar</string>
+    <string name="legendas">Legendas</string>
+    <string name="telefone">Telefone:</string>
+    <string name="celular">Celular:</string>
+    <string name="conjunge">Cônjunge:</string>
+    <string name="tipo">Tipo:</string>
+    <string name="hobbie">Hobbie:</string>
+    <string name="e_mail">E-mail:</string>
+    <string name="data_nasc">Data Nasc:</string>
+    <string name="nasc_c_njuge">Nasc. Cônjuge:</string>
+    <string name="time">Time:</string>
+    <string name="dados">Dados</string>
+    <string name="digite_aqui_para_pesquisar">Digite o Cliente ou RCA</string>
+</resources>

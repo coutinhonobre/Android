@@ -1,0 +1,226 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "346dec0ba1cdf50f057ab904d740d0d9",
+    "entities": [
+      {
+        "tableName": "clientes",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER, `codigo` TEXT, `razao_social` TEXT, `nome_fantasia` TEXT, `cnpj` TEXT, `ramo_atividade` TEXT, `endereco` TEXT, `status` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "codigo",
+            "columnName": "codigo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "razaoSocial",
+            "columnName": "razao_social",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "nomeFantasia",
+            "columnName": "nome_fantasia",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "cnpj",
+            "columnName": "cnpj",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "ramoAtividade",
+            "columnName": "ramo_atividade",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "endereco",
+            "columnName": "endereco",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "contatos",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `nome` TEXT, `telefone` TEXT, `celular` TEXT, `conjuge` TEXT, `tipo` TEXT, `email` TEXT, `data_nascimento` TEXT, `data_nascimento_conjugue` TEXT, `client_id` INTEGER NOT NULL, FOREIGN KEY(`client_id`) REFERENCES `clientes`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "nome",
+            "columnName": "nome",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "telefone",
+            "columnName": "telefone",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "celular",
+            "columnName": "celular",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "conjuge",
+            "columnName": "conjuge",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "tipo",
+            "columnName": "tipo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "eMail",
+            "columnName": "email",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "dataNascimento",
+            "columnName": "data_nascimento",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "dataNascimentoConjuge",
+            "columnName": "data_nascimento_conjugue",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "clienteId",
+            "columnName": "client_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": [
+          {
+            "table": "clientes",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "client_id"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "pedidos",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER, `numero_ped_rca` TEXT, `codigo_cliente` TEXT, `nome_cliente` TEXT, `data` TEXT, `status` TEXT, `critica` TEXT, `tipo` TEXT, `legendas` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "numeroPedRca",
+            "columnName": "numero_ped_rca",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "codigoCliente",
+            "columnName": "codigo_cliente",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "nomeCliente",
+            "columnName": "nome_cliente",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "data",
+            "columnName": "data",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "critica",
+            "columnName": "critica",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "tipo",
+            "columnName": "tipo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "legendas",
+            "columnName": "legendas",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '346dec0ba1cdf50f057ab904d740d0d9')"
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/santral_medium</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@drawable/splash_gradient</item>
+    </style>
+
+    <style name="CardViewMenuPrincipal">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">150dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
+    <style name="CardTitleTitulo">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="CardTitleFieldsTitulo">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="CardTitleFields">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/txtLabels</item>
+    </style>
+
+    <style name="CardTitleFieldsList">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/txtLabels</item>
+    </style>
+
+    <style name="CardTitleSubTituloNegrito">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_dados_cliente">
+
+    <fragment
+        android:id="@+id/navigation_dados_cliente"
+        android:name="com.github.maxapp.presentation.clientes.ui.dados.DadosFragment"
+        android:label="@string/dados_do_cliente"
+        tools:layout="@layout/fragment_dados" />
+
+    <fragment
+        android:id="@+id/navigation_hist_pedidos"
+        android:name="com.github.maxapp.presentation.clientes.ui.historicopedidos.HistoricoPedidosFragment"
+        android:label="@string/hist_pedidos"
+        tools:layout="@layout/fragment_historico_pedidos" />
+
+    <fragment
+        android:id="@+id/navigation_alvaras"
+        android:name="com.github.maxapp.presentation.clientes.ui.alvara.AlvaraFragment"
+        android:label="@string/alvaras"
+        tools:layout="@layout/fragment_alvara" />
+</navigation>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:paddingTop="50dp"
+android:layout_width="wrap_content"
+android:layout_height="match_parent"
+android:layout_gravity="center|center_vertical|center_horizontal">
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/menuPrincipalFragmentClientes"
+    style="@style/CardViewMenuPrincipal"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_maxima_pessoas"
+        android:gravity="center"
+        android:text="@string/clientes"
+        />
+
+</androidx.cardview.widget.CardView>
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/menuPrincipalPedidos"
+    style="@style/CardViewMenuPrincipal"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@+id/menuPrincipalFragmentClientes"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_maxima_pedido"
+        android:gravity="center"
+        android:text="@string/pedidos" />
+
+</androidx.cardview.widget.CardView>
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/menuPrincipalFragmentResumoVendas"
+    style="@style/CardViewMenuPrincipal"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/menuPrincipalFragmentClientes">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_maxima_resumo_vendas"
+        android:gravity="center"
+        android:text="@string/resumo_de_vendas" />
+
+</androidx.cardview.widget.CardView>
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/menuPrincipalFerramentas"
+    style="@style/CardViewMenuPrincipal"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@+id/menuPrincipalFragmentResumoVendas"
+    app:layout_constraintTop_toBottomOf="@+id/menuPrincipalPedidos">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_maxima_ferramentas"
+        android:gravity="center"
+        android:text="@string/pedidos" />
+
+</androidx.cardview.widget.CardView>
+
+<TextView
+    android:id="@+id/menuPrincipalVersaoConnexao"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:drawableEnd="@drawable/ic_maxima_nuvem_desconectado"
+    android:gravity="center_vertical"
+    android:padding="5dp"
+    android:text="@string/versao"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/menuPrincipalFerramentas"
+    app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
